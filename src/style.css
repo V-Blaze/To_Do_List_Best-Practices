@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  outline: none;
+  border: none;
+}
+
+i {
+  opacity: 0.8;
+  color: gray;
+}
+
+.main-section {
+  background-color: #fff;
+  border-radius: 5px;
+  margin: 10% 10%;
+  box-shadow: 3px 3px 3px 2px gray;
+  padding: 2% 2%;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  padding: 3% 0;
+  border-bottom: 1px solid gray;
+}
+
+.title h1 {
+  font-size: 1.2rem;
+}
+
+.title i {
+  display: block;
+}
+
+.form-div {
+  display: flex;
+  justify-content: space-between;
+  padding: 2% 0;
+  min-height: 3%;
+  border-bottom: 1px solid gray;
+}
+
+.form-input {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 3%;
+}
+
+.form-input input {
+  border: none;
+  height: 2.5rem;
+}
+
+#edit-todo-item {
+  display: none;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 3% 0;
+  border-bottom: 1px solid gray;
+}
+
+.todo_detail {
+  display: flex;
+}
+
+.todo_detail .item {
+  font-size: 0.9rem;
+  font-weight: normal;
+  padding-left: 1rem;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.clear {
+  display: flex;
+  justify-content: center;
+  padding: 3% 0;
+  background-color: rgba(255, 255, 220);
+}
+
+.clear h3 {
+  font-size: 0.9rem;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+i:hover {
+  cursor: pointer;
+  color: #000;
+  opacity: 1;
+}
