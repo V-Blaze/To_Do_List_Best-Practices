@@ -17,7 +17,7 @@ i {
 .main-section {
   background-color: #fff;
   border-radius: 5px;
-  margin: 10% 10%;
+  margin: 10% 30%;
   box-shadow: 3px 3px 3px 2px gray;
   padding: 2% 2%;
 }
@@ -39,6 +39,7 @@ i {
 
 .form-div {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   padding: 2% 0;
   min-height: 3%;
@@ -54,6 +55,7 @@ i {
 .form-input input {
   border: none;
   height: 2.5rem;
+  width: 80%;
 }
 
 #edit-todo-item {

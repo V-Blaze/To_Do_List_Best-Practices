@@ -22,7 +22,8 @@ edittodoForm.addEventListener('submit', (e) => {
   edittodoForm.style.display = 'none';
 });
 
-document.querySelector('.clear-all').addEventListener('click', Interactive.deleteAllCompleted);
+const clearAllBtn = document.querySelector('.clear-all');
+clearAllBtn.addEventListener('click', Interactive.deleteAllCompleted);
 
 window.addEventListener('DOMContentLoaded', () => {
   document.addEventListener('listUpdated', () => {

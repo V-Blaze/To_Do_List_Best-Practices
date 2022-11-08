@@ -9,18 +9,15 @@ static toggleCompleted = (id, curStatus) => {
 }
 
 static addCheckEvent = () => {
-  document.querySelectorAll('.checkbox').forEach((box) => box.addEventListener('change', () => {
-    let id;
+  const checkboxes = document.querySelectorAll('.checkbox');
+
+  checkboxes.forEach((box) => box.addEventListener('change', () => {
+    const id = box.id - 1;
     let curStatus;
-    if (box.id > 0) {
-      id = box.id - 1;
-    } else {
-      id = 0;
-    }
 
     if (box.checked === true) {
       curStatus = true;
-    } else if (box.checked !== true) {
+    } else {
       curStatus = false;
     }
 
